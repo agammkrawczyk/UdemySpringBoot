@@ -1,9 +1,9 @@
-package pl.agakrawczyk.SpringBootCourse;
+package pl.agakrawczyk.SpringBootCourse.model;
 
 import lombok.Data;
 
 @Data
-public class User {
+public class UserDTO {
 private String firstName;
 private String lastName;
 private String email;

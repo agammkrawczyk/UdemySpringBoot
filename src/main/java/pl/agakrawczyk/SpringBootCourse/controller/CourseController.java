@@ -1,10 +1,10 @@
-package pl.agakrawczyk.SpringBootCourse.Controller;
+package pl.agakrawczyk.SpringBootCourse.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.agakrawczyk.SpringBootCourse.Course;
-import pl.agakrawczyk.SpringBootCourse.WrongIdException;
+import pl.agakrawczyk.SpringBootCourse.model.Course;
+import pl.agakrawczyk.SpringBootCourse.exception.WrongIdException;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pl.agakrawczyk.SpringBootCourse;
+package pl.agakrawczyk.SpringBootCourse.model;
 
 import lombok.Data;
 

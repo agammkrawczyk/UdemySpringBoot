@@ -1,4 +1,4 @@
-package pl.agakrawczyk.SpringBootCourse;
+package pl.agakrawczyk.SpringBootCourse.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
