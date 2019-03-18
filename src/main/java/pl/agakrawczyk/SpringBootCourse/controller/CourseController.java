@@ -12,6 +12,7 @@ import pl.agakrawczyk.SpringBootCourse.persistence.repository.CourseRepo;
 import java.util.ArrayList;
 import java.util.List;
 import  pl.agakrawczyk.SpringBootCourse.persistence.model.Course;
+import pl.agakrawczyk.SpringBootCourse.service.Mapper;
 
 @RestController
 @RequestMapping(value = "/course")
@@ -47,7 +48,7 @@ public ResponseEntity<CourseDTO> createCourse(@RequestBody CourseDTO courseDTO){
   public CourseDTO buyCourse(@PathVariable(value = "id") Long id) {
       System.out.println( "buyCourse" );
       Course c = courseRepo.getOne(id);
-      return new CourseDTO(c.getId(), c.getName(), 560);
+      return Mapper.courseToDTO(c);
   }
 
     @RequestMapping(value = "/buy2", method = RequestMethod.POST)
